@@ -18,6 +18,7 @@
         this.$formElement.on('submit', function (event) {
             event.preventDefault();
             
+            var data = {};
             $(this).serializeArray().forEach(function (item) {
                 data[item.name] = item.value;
                 console.log(item.name + ' is ' + item.value);
@@ -25,7 +26,7 @@
             console.log(data);
             fn(data);
             this.reset();
-            this.element[0].focus();
+            this.elements[0].focus();
         });
     };
 
