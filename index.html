@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body class="container">
-    <header>
+    <header class="my-2">
         <h1>CoffeeRun</h1>
     </header>
 
     <section>
-        <div class="card card-default">
+        <div class="card bg-light">
             <div class="card-body">
                 <form data-coffee-order="form">
                     <div class="form-group">
@@ -62,10 +62,19 @@
                     
                 </form>
             </div>
-        </div>  
+        </div> 
+
+        <div class="card bg-light mt-3">
+            <div class="card-body">
+                <h4>Pending Orders:</h4>
+                <div data-coffee-order="checklist"></div>
+            </div>
+        </div>
+        
     </section>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <script src="scripts/checklist.js" charset="utf-8"></script>
     <script src="scripts/formhandler.js" charset="utf-8"></script>
     <script src="scripts/datastore.js" charset="utf-8"></script>
     <script src="scripts/truck.js" charset="utf-8"></script>
